@@ -6,7 +6,7 @@ from supabase import create_client
 from openai import OpenAI
 
 # 페이지 구성
-st.set_page_config(page_title="삼성노트북 시맨틱 검색", layout="wide")
+st.set_page_config(page_title="두부 브리또 시맨틱 검색", layout="wide")
 
 # Streamlit에서 실행 중인지 확인하고 secrets 가져오기
 try:
@@ -146,7 +146,7 @@ def semantic_search(query_text, limit=10, match_threshold=0.5):
     
 # 메인 UI
 st.title("두부 브리또 블로그 시맨틱 검색")
-st.write("Supabase 벡터 데이터베이스에 저장된 삼성노트북 관련 블로그 데이터를 시맨틱 검색합니다.")
+st.write("Supabase 벡터 데이터베이스에 저장된 두부 브리또 관련 블로그 데이터를 시맨틱 검색합니다.")
 
 # 검색 설정 UI
 st.sidebar.title("검색 설정")
